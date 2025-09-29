@@ -1,0 +1,22 @@
+<div class="login-container">
+  <h1 class="login-title">Task Manager System</h1>
+<div class="login-container">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" />
+      <mat-error *ngIf="loginForm.get('email')?.hasError('required')">Email required</mat-error>
+      <mat-error *ngIf="loginForm.get('email')?.hasError('email')">Invalid email</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" />
+      <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password required</mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Login</button>
+  </form>
+  <p>Do you want to register? <a routerLink="/register"> New User</a></p>
+
+</div>
