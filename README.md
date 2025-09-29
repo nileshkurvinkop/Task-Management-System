@@ -1,17 +1,47 @@
 # Task Management System
 
-A simple task management system built with **Angular (Frontend)** and **Node.js + Express + MSSQL (Backend)**.  
-Users can register, login, and manage tasks. Optional enhancements include role-based access and file uploads for tasks.
+A simple Task Management System built with **Angular (Frontend)** and **Node.js + Express + MSSQL (Backend)**. Users can register, login, and manage tasks. Optional enhancements include role-based access and file uploads for tasks.
 
 ---
 
-## Frontend
+## Table of Contents
 
-This project was generated using **Angular CLI** version 20.3.3.
+- [Features](#features)
+- [Technologies](#technologies)
+- [Prerequisites](#prerequisites)
+- [Frontend Setup](#frontend-setup)
+- [Backend Setup](#backend-setup)
+- [API Endpoints](#api-endpoints)
+- [Optional Enhancements](#optional-enhancements)
+- [Additional Resources](#additional-resources)
 
-### Prerequisites
+---
 
-- Node.js (v20+ recommended)  
-- Angular CLI installed globally:  
+## Features
+
+- User registration and login with JWT authentication
+- Create, read, update, and delete tasks
+- Optional role-based access (Admin vs User)
+- Optional file uploads for tasks
+
+---
+
+## Technologies
+
+- Frontend: Angular 20.3.3
+- Backend: Node.js, Express
+- Database: Microsoft SQL Server (MSSQL)
+- Authentication: JWT
+
+---
+
+## Prerequisites
+
+- Node.js v20+
+- Angular CLI globally installed:
 ```bash
 npm install -g @angular/cli
+
+```
+
+
